@@ -8,9 +8,11 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
+    "postinstall": "npm install vite",
     "start": "vite preview --host 0.0.0.0 --port $PORT"
   },
   "dependencies": {
+    "vite": "^6.2.0",
     "@paypal/react-paypal-js": "^8.8.1",
     "@reduxjs/toolkit": "^2.5.0",
     "axios": "^1.7.9",
@@ -39,13 +41,10 @@
     "eslint-plugin-react-refresh": "^0.4.16",
     "globals": "^15.14.0",
     "postcss": "^8.4.49",
-    "tailwindcss": "^3.4.17",
-    "vite": "^6.2.0"
+    "tailwindcss": "^3.4.17"
   },
   "engines": {
     "node": ">=22.0.0",
     "npm": ">=10.0.0"
   }
 }
-
-
