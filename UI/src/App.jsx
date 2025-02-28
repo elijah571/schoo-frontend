@@ -23,7 +23,6 @@ const App = () => {
         <Route path="/reports" element={<Report />} />
         <Route path="/login" element={<Login />} />
         <Route path="/news" element={<News/>}/>
-        <Route path="/attendance" element={<GetAllAttendance />} />
 
         {/* Teacher Routes */}
         <Route path="/teachers/:id" element={<TeacherDetails />} />
@@ -40,6 +39,8 @@ const App = () => {
           <Route path="/admin/create-classroom" element={<CreateClassroom />} />
           <Route path="/admin/assign-teacher" element={<AssignTeacher />} />
           <Route path="/admin/assign-students" element={<AssignStudents />} />
+          <Route path="/attendance" element={<GetAllAttendance />} />
+
         </Route>
       </Route>
     </Routes>

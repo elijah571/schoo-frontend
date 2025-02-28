@@ -6,15 +6,17 @@ export default defineConfig({
   server: {
     host: "0.0.0.0",
     proxy: {
-      "/api": {
-        target: "https://school-backend-umg3.onrender.com",
+      "/api/": {
+        target:  "https://school-backend-umg3.onrender.com",
         changeOrigin: true,
         secure: true,
       },
+      
     },
   },
   preview: {
     host: "0.0.0.0",
-    port: 8080,
+    port: 4173,
+    // allowedHosts: ["e-commerce-frontend-dg0q.onrender.com"],
   },
 });
