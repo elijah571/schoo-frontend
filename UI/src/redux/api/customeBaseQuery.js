@@ -32,3 +32,4 @@ const customBaseQuery = async ({ url, method, data, params }) => {
 };
 
 export default customBaseQuery;
+ 
