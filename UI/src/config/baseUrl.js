@@ -1,4 +1,2 @@
 // Base URL Configuration
-export const BASE_URL = import.meta.env.PROD
-  ? "https://school-backend-umg3.onrender.com"  // Production URL
-  : "";  // Empty for local proxy
+export const BASE_URL = import.meta.env.VITE_API_URL || "https://school-backend-umg3.onrender.com";
